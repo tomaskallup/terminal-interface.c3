@@ -1,0 +1,31 @@
+{
+  "langrev": "1",
+  "warnings": [ "no-unused" ],
+  "dependencies": [ ],
+  "authors": [ "Tomas Kallup" ],
+  "version": "0.0.1",
+  "sources": [ "src/**" ],
+  "test-sources": [ "test/**" ],
+  "output": "build",
+  "targets": {
+    "terminal_interface": {
+      "type": "static-lib"
+    },
+    "key_printer": {
+      "type": "executable",
+      "sources": [
+        "src/**",
+        "examples/key-printer.c3"
+      ]
+    },
+    "editor": {
+      "type": "executable",
+      "sources": [
+        "src/**",
+        "examples/editor.c3"
+      ]
+    }
+  },
+  "cpu": "generic",
+  "opt": "O0"
+}
